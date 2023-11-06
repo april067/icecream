@@ -4,7 +4,6 @@ $toggle-width: 32px;
 $toggle-line-size: calc($toggle-width / 8);
 
 $toggle-line-color: #0029ff;
-// $toggle-line-focus-color: #f8d24e;
 $toggle-line-focus-color: #fcfcfc;
 
 $toggle-line-angle: 405deg;
@@ -38,7 +37,6 @@ $toggle-anim-speed: 0.9s;
   display: block;
   width: $toggle-width;
   padding: calc($toggle-line-size / 2);
-  // padding: calc(($toggle-size - $toggle-line-size * 3) / 6);
 
   &:after {
     content: '';

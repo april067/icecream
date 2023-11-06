@@ -1,0 +1,111 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero__wrapper-left">
+      <div class="title-cover">
+        <h1 class="hero__title">
+          <span class="hero__title--default"> ice cream made with</span>
+          <span class="hero__title--accent">passion</span>
+        </h1>
+        <ul class="hero__buttons">
+          <li class="hero__button">
+            <a class="hero__section-link" href="#products">Products</a>
+          </li>
+          <li class="hero__button">
+            <a class="hero__section-link" href="#about">How it's made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__desc-cover">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/desktop/iceCream-dish-d.webp    225w,
+              ./images/hero/desktop/iceCream-dish-d@2x.webp 450w
+            "
+            sizes="225px"
+            type="image/webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/hero/tablet/iceCream-dish-t.webp    152w,
+              ./images/hero/tablet/iceCream-dish-t@2x.webp 304w
+            "
+            sizes="152px"
+            type="image/webp"
+            media="(min-width: 732px)"
+          />
+
+          <img
+            class="hero__desc-img"
+            src="./images/hero/desktop/iceCream-dish-d.png"
+            alt="a dish of ice cream"
+          />
+        </picture>
+
+        <div class="hero__desc-wrap">
+          <p class="hero__desc">
+            Indulge in a scoop of ice cream made with passion and treat your
+            taste buds to an unforgettable experience!
+          </p>
+          <a class="hero__desc-link" href="#products">
+            <svg class="hero__desc-icon">
+              <use href="./images/sprite.svg#arrow-right-long"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__wrapper-middle">
+      <picture>
+        <source
+          srcset="
+            ./images/hero/desktop/main-iceCream-d.webp    236w,
+            ./images/hero/desktop/main-iceCream-d@2x.webp 472w
+          "
+          sizes="236px"
+          type="image/webp"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./images/hero/tablet/main-iceCream-t.webp    143w,
+            ./images/hero/tablet/main-iceCream-t@2x.webp 286w
+          "
+          sizes="143px"
+          type="image/webp"
+          media="(min-width: 732px)"
+        />
+        <source
+          srcset="
+            ./images/hero/mobile/main-iceCream-m.webp    171w,
+            ./images/hero/mobile/main-iceCream-m@2x.webp 342w
+          "
+          sizes="171px"
+          type="image/webp"
+        />
+
+        <img
+          class="hero__main-img"
+          src="./images/hero/desktop/main-iceCream-d.png"
+          alt="a big delicious ice cream"
+        />
+      </picture>
+    </div>
+
+    <div class="hero__wrapper-right">
+      <ul class="hero__achievements">
+        <li class="hero__achievements-point">
+          <p class="hero__achievements-counter">16</p>
+          <p class="hero__achievements-desc">cafes</p>
+        </li>
+        <li class="hero__achievements-point">
+          <p class="hero__achievements-counter">23</p>
+          <p class="hero__achievements-desc">food trucks</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
