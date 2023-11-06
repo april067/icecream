@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-family: var(--title-text);
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 0%;
+
+  fill: var(--main-color);
+}
+
+.logo__icon {
+  width: 28px;
+  height: 55px;
+  margin-right: 12px;
+}

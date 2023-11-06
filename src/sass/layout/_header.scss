@@ -1,3 +1,73 @@
 .header {
   background-color: var(--background-main-color);
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  padding-top: 22px;
+
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__list {
+  display: flex;
+  column-gap: 28px;
+
+  @include adaptiveValue(margin-left, 100, 200, 1024, 1200);
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.header__item {
+}
+
+.header__link {
+  padding: 15px 0;
+
+  font-weight: 700;
+  line-height: 1.313;
+
+  color: var(--tertiary-color);
+
+  transition: color 250ms var(--timing-fn);
+
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
+}
+
+.header__burger.btn-toggle {
+  margin-left: auto;
+  padding: 0;
+
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+
+  @media screen and (min-width: 732px) {
+    margin-right: 36px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.header__button {
+  @include mainButton;
+
+  @media screen and (max-width: 731px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: auto;
+  }
 }
