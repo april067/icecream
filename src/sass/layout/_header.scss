@@ -23,9 +23,6 @@
   }
 }
 
-.header__item {
-}
-
 .header__link {
   padding: 15px 0;
 
@@ -37,7 +34,8 @@
   transition: color 250ms var(--timing-fn);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: var(--main-color);
   }
 }
@@ -60,7 +58,15 @@
 }
 
 .header__button {
-  @include mainButton;
+  @extend %mainButton;
+
+  color: var(--main-color);
+  background-color: var(--tertiary-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-secondary-color);
+  }
 
   @media screen and (max-width: 731px) {
     display: none;

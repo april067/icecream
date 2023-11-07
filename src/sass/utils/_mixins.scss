@@ -4,35 +4,3 @@
       ($maxVW - $minVW)
   );
 }
-
-@mixin mainButton(
-  $color: var(--main-color),
-  $backgroundColor: var(--tertiary-color),
-  $hoverColor: var(--tertiary-color),
-  $hoverBackgroundColor: var(--main-color)
-) {
-  display: flex;
-  align-items: center;
-  height: 44px;
-  padding: 0 37px;
-  border-radius: 22px;
-
-  font-weight: 700;
-  line-height: 1.313;
-
-  background-color: $backgroundColor;
-  color: $color;
-
-  transition: color 250ms var(--timing-fn),
-    background-color 250ms var(--timing-fn);
-
-  &:hover,
-  &:focus {
-    background-color: $hoverBackgroundColor;
-    color: $hoverColor;
-  }
-
-  & .main-button__icon {
-    @extend %mainButtonIcon;
-  }
-}

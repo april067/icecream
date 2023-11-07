@@ -4,7 +4,7 @@ $toggle-width: 32px;
 $toggle-line-size: calc($toggle-width / 8);
 
 $toggle-line-color: #0029ff;
-$toggle-line-focus-color: #fcfcfc;
+$toggle-line-focus-color: #0f00e0;
 
 $toggle-line-angle: 405deg;
 $toggle-anim-speed: 0.9s;
@@ -28,7 +28,8 @@ $toggle-anim-speed: 0.9s;
   }
 
   &:focus .line:after,
-  &:hover .line:after {
+  &:hover .line:after,
+  &:active .line:after {
     background-color: $toggle-line-focus-color;
   }
 }
