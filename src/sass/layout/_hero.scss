@@ -4,8 +4,6 @@
   background-color: var(--background-main-color);
   background-repeat: no-repeat;
   background-size: 320px;
-  // background-position: left 60px bottom;
-  // background-image: url('../images/hero/mobile/dots-m.svg');
 
   @media screen and (min-width: 732px) {
     background-size: 768px;
@@ -13,9 +11,12 @@
     background-image: url('../images/hero/tablet/dots-t.svg');
   }
 
+  @media screen and (min-width: 1024px) {
+    background-image: url('../images/hero/desktop/dots-d.svg');
+  }
+
   & .container {
     @media screen and (max-width: 731px) {
-      // height: 430px;
       overflow: hidden;
     }
 
@@ -25,8 +26,8 @@
   }
 }
 
-.hero__wrapper-left {
-}
+// .hero__wrapper-left {
+// }
 
 .title-cover {
   @media screen and (max-width: 731px) {
@@ -37,7 +38,7 @@
 
   @media screen and (min-width: 732px) {
     margin-top: 10px;
-    margin-bottom: 37px;
+    margin-bottom: 20px;
   }
 }
 
@@ -189,7 +190,7 @@
 .hero__wrapper-middle {
   position: relative;
 
-  // margin-left: 260px;
+  margin-top: 20px;
 
   @media screen and (max-width: 480px) {
     @include adaptiveValue(margin-left, 100, 260, 320, 480);
@@ -199,11 +200,15 @@
     margin-left: 200px;
   }
 
+  @media screen and (min-width: 732px) {
+    margin-left: 50px;
+  }
+
   &::before {
     content: '';
 
     position: absolute;
-    top: 0;
+    top: -20px;
     left: -90px;
 
     display: block;
@@ -217,8 +222,8 @@
       width: 360px;
       height: 360px;
 
-      left: -34px;
-      top: -42px;
+      top: -62px;
+      left: -84px;
     }
   }
 }
@@ -226,11 +231,11 @@
 .hero__main-img {
   position: relative;
 
-  margin-top: 20px;
+  // margin-top: 20px;
 
-  @media screen and (min-width: 732px) {
-    margin-left: 50px;
-  }
+  // @media screen and (min-width: 732px) {
+  //   margin-left: 50px;
+  // }
 }
 
 .hero__mobile-dots {
@@ -256,33 +261,25 @@
 }
 
 .hero__achievements {
+  margin-top: 10px;
 }
 
 .hero__achievements-point {
+  position: relative;
+  right: 10px;
+  z-index: 1;
+
   text-align: right;
 
   &:first-child {
     margin-bottom: 13px;
   }
-}
-
-.hero__achievements-counter {
-  position: relative;
-  right: 10px;
-  z-index: 1;
-
-  font-family: var(--title-text);
-  font-size: 28px;
-  line-height: 1.143;
-  font-weight: 400;
-
-  color: var(--main-color);
 
   &::after {
     content: '';
 
     position: absolute;
-    top: 2px;
+    top: -2px;
     right: -10px;
     z-index: -1;
 
@@ -292,6 +289,30 @@
     border-radius: 50%;
 
     background-color: var(--tertiary-color);
+
+    @media screen and (min-width: 1024px) {
+      top: -4px;
+      right: -18px;
+
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero__achievements-counter {
+  font-family: var(--title-text);
+  font-size: 28px;
+  line-height: 1.143;
+  font-weight: 400;
+
+  color: var(--main-color);
+
+  @media screen and (min-width: 1024px) {
+    right: 18px;
+
+    font-size: 46px;
+    line-height: 1.152;
   }
 }
 
@@ -301,4 +322,9 @@
   font-weight: 400;
 
   color: var(--tertiary-color);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 1.286;
+  }
 }
