@@ -176,6 +176,8 @@
 
   color: var(--tertiary-color);
 
+  transition: background-color 250ms var(--timing-fn);
+
   &:hover,
   &:focus,
   &:active {
