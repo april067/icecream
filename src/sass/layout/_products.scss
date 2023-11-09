@@ -18,15 +18,23 @@
   }
 }
 
-// .container {
-// }
-
 .products__subtitle {
   @extend %sectionSubtitle;
 }
 
 .products__title {
   @extend %sectionTitle;
+
+  margin-top: 15px;
+  margin-bottom: 144px;
+
+  @media screen and (min-width: 732px) {
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 260px;
+  }
 }
 
 .products__list {
@@ -35,7 +43,7 @@
     column-gap: 16px;
   }
 
-  @media screen and (min-width: 732px) {
+  @media screen and (min-width: 1024px) {
     column-gap: 29px;
   }
 }

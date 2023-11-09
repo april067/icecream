@@ -1,0 +1,108 @@
+<section class="about">
+  <div class="container">
+    <p class="about__subtitle">tradition and love</p>
+    <h1 class="about__title">how it's made?</h1>
+    <div class="about__wrap">
+      <div class="about__img-cover">
+        <picture>
+          <source
+            srcset="
+              ./images/about/desktop/cow-d.webp    490w,
+              ./images/about/desktop/cow-d@2x.webp 980w
+            "
+            sizes="490px"
+            type="image/webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              ./images/about/tablet/cow-t.webp    330w,
+              ./images/about/tablet/cow-t@2x.webp 660w
+            "
+            sizes="330px"
+            type="image/webp"
+            media="(min-width: 732px)"
+          />
+          <source
+            srcset="
+              ./images/about/tablet/cow-t.webp    279w,
+              ./images/about/tablet/cow-t@2x.webp 558w
+            "
+            sizes="279px"
+            type="image/webp"
+          />
+
+          <img
+            class="about__img"
+            src="./images/about/desktop/cow-d.png"
+            alt="cow"
+          />
+        </picture>
+      </div>
+      <div class="about__decs-cover">
+        <p class="about__desc">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. The main value for us is health, and we are guided by
+          it, creating handmade desserts.
+          <br />
+          <br />
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+          <br />
+          <br />
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button
+          class="about__button"
+          type="button"
+          aria-label="Read-more button"
+        >
+          Read more
+          <svg class="main-button__icon">
+            <use href="./images/sprite.svg#arrow-right-small"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="about__list">
+      <li class="about__item">
+        <div class="about__icon-cover">
+          <svg class="about__icon">
+            <use href="./images/sprite.svg#cow"></use>
+          </svg>
+        </div>
+        <p class="about__point">721</p>
+        <p class="about__details">
+          The number of animals that provide natural milk to produce the world's
+          best ice cream
+        </p>
+      </li>
+
+      <li class="about__item">
+        <div class="about__icon-cover">
+          <svg class="about__icon">
+            <use href="./images/sprite.svg#weight"></use>
+          </svg>
+        </div>
+        <p class="about__point">16kg</p>
+        <p class="about__details">
+          The amount of delicate cream that is prepared every hour
+        </p>
+      </li>
+
+      <li class="about__item">
+        <div class="about__icon-cover">
+          <svg class="about__icon">
+            <use href="./images/sprite.svg#ice-cream"></use>
+          </svg>
+        </div>
+        <p class="about__point">84</p>
+        <p class="about__details">
+          The amount of awesome ice cream produced every minute
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>

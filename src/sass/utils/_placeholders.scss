@@ -42,9 +42,6 @@
 }
 
 %sectionTitle {
-  margin-top: 15px;
-  margin-bottom: 144px;
-
   font-family: var(--title-text);
   text-align: center;
   font-size: 34px;
@@ -55,15 +52,11 @@
   color: var(--main-color);
 
   @media screen and (min-width: 732px) {
-    margin-bottom: 150px;
-
     font-size: 48px;
     line-height: 1.146;
   }
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 260px;
-
     font-size: 58px;
     line-height: 1.138;
     letter-spacing: 0.06em;
