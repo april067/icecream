@@ -1,0 +1,164 @@
+.reviews {
+  padding: 60px 0;
+
+  background-image: url('../images/products/mobile/background-m2.svg');
+  background-size: 400px;
+  background-position: center top;
+
+  @media screen and (min-width: 732px) {
+    padding: 100px 0;
+
+    background-size: 400px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 130px 0;
+
+    background-size: 500px;
+  }
+}
+
+.reviews__list {
+}
+
+.reviews__item {
+}
+
+.reviews__img-cover {
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+      rgba(0, 42, 255, 0.4),
+      rgba(0, 42, 255, 0.4)
+    ),
+    url('../images/reviews/reviews1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__text-cover {
+  border-radius: 24px;
+  padding: 40px 50px 30px;
+
+  background-color: var(--background-secondary-color-alfa50);
+
+  @media screen and (min-width: 732px) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 920px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  z-index: 1;
+
+  text-align: center;
+  font-size: 12px;
+  line-height: 2.5;
+  color: var(--quaternary-color);
+
+  background-image: linear-gradient(
+    to top,
+    var(--main-color) 1.5%,
+    transparent 1.5%,
+    transparent
+  );
+  background-size: 100px 30px;
+
+  @media screen and (min-width: 732px) {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.reviews__quotes {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+
+  width: 54px;
+  height: 40px;
+
+  fill: var(--background-main-color);
+}
+
+.reviews__decor-wrap {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.reviews__decor-dots {
+  display: block;
+
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+
+  background-color: var(--main-color);
+}
+
+.reviews__desc {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.86;
+  color: var(--quaternary-color);
+
+  @media screen and (min-width: 732px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+.reviews__slider-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 18px;
+}
+
+.reviews__slider-dots {
+  display: block;
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(
+    var(--accent-secondary-color),
+    var(--accent-secondary-color)
+  );
+}
+
+.reviews__slider-dots--active {
+  border-radius: 0;
+
+  background-image: url('../images/reviews/house.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
