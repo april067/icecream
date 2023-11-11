@@ -121,7 +121,7 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: var(--accent-secondary-color);
+    box-shadow: 0 4px 18px 0 var(--main-color);
   }
 }
 

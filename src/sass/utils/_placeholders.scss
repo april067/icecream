@@ -8,7 +8,7 @@
   font-weight: 700;
   line-height: 1.313;
 
-  transition: color 250ms var(--timing-fn),
+  transition: color 250ms var(--timing-fn), box-shadow 250ms var(--timing-fn),
     background-color 250ms var(--timing-fn);
 
   & .main-button__icon {

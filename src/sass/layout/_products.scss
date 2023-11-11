@@ -51,7 +51,6 @@
 .products__item {
   position: relative;
 
-  // height: 428px;
   display: flex;
   flex-direction: column;
   padding-top: 160px;
@@ -69,13 +68,13 @@
   }
 
   @media screen and (min-width: 732px) {
-    width: calc(100% - 2 * 16px);
+    width: calc((100% - 2 * 16px) / 3);
     padding-left: 26px;
     padding-right: 26px;
   }
 
   @media screen and (min-width: 1024px) {
-    width: calc(100% - 2 * 29px);
+    width: calc((100% - 2 * 29px) / 3);
     padding-top: 240px;
     padding-left: 50px;
     padding-right: 50px;
