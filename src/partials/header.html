@@ -1,5 +1,5 @@
 <section class="header">
-  <div class="container">
+  <div class="container" data-container>
     <a href="./index.html" class="logo">
       <svg class="logo__icon">
         <use href="./images/sprite.svg#logo"></use>
@@ -7,19 +7,23 @@
       icecream
     </a>
 
-    <nav class="header__nav">
+    <nav class="header__nav" data-menu>
       <ul class="header__list">
         <li class="header__item">
-          <a href="./index.html" class="header__link">Home</a>
+          <a href="./index.html" class="header__link" data-menu-link>Home</a>
         </li>
         <li class="header__item">
-          <a href="#about" class="header__link">How it's made?</a>
+          <a href="#about" class="header__link" data-menu-link
+            >How it's made?</a
+          >
         </li>
         <li class="header__item">
-          <a href="#products" class="header__link">Our products</a>
+          <a href="#products" class="header__link" data-menu-link
+            >Our products</a
+          >
         </li>
         <li class="header__item">
-          <a href="#contacts" class="header__link">Contacts</a>
+          <a href="#contacts" class="header__link" data-menu-link>Contacts</a>
         </li>
       </ul>
     </nav>
@@ -27,16 +31,20 @@
     <button
       class="header__burger btn-toggle"
       type="button"
-      id="menu-toggle"
       aria-label="Mobile menu open button"
-      data-menu-button
+      data-menu-toggle
     >
       <span class="line"></span>
       <span class="line"></span>
       <span class="line"></span>
     </button>
 
-    <button class="header__button" type="button" aria-label="Buy-now button">
+    <button
+      class="header__button"
+      type="button"
+      aria-label="Buy-now button"
+      data-button
+    >
       Buy now
       <svg class="main-button__icon">
         <use href="./images/sprite.svg#arrow-right-small"></use>

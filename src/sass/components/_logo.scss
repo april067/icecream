@@ -1,4 +1,7 @@
 .logo {
+  position: relative;
+  z-index: 5;
+
   display: flex;
   align-items: center;
 
@@ -9,6 +12,11 @@
   line-height: 0%;
 
   fill: var(--main-color);
+
+  @media screen and (max-width: 731px) {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .logo__icon {
