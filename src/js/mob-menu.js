@@ -23,17 +23,26 @@
     if (refs.menuBtn.classList.contains(cls.open)) {
       refs.menuBtn.classList.remove(btnClass);
       btnClass = cls.close;
-
-      refs.headerContainer.appendChild(refs.headerBtn);
     } else if (refs.menuBtn.classList.contains(cls.close)) {
       refs.menuBtn.classList.remove(btnClass);
       btnClass = cls.open;
-
-      refs.navigation.appendChild(refs.headerBtn);
     }
 
     void refs.menuBtn.offsetWidth;
     refs.menuBtn.classList.add(btnClass);
+  }
+
+  function switchingHeaderButton() {
+    refs.menuBtn.classList.toggle('data-menu-open');
+    refs.menuBtn.classList.toggle('data-menu-close');
+
+    if (refs.menuBtn.classList.contains('data-menu-open')) {
+      refs.navigation.appendChild(refs.headerBtn);
+    }
+
+    if (refs.menuBtn.classList.contains('data-menu-close')) {
+      refs.headerContainer.appendChild(refs.headerBtn);
+    }
   }
 
   function toggleMenu() {
@@ -41,6 +50,7 @@
 
     document.body.classList.toggle('menu-open');
     switchingBurger();
+    switchingHeaderButton();
   }
 
   function closeMenu() {
@@ -48,5 +58,6 @@
     refs.headerContainer.appendChild(refs.headerBtn);
     document.body.classList.remove('menu-open');
     switchingBurger();
+    switchingHeaderButton();
   }
 })();
