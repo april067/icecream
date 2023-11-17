@@ -1,5 +1,6 @@
 (() => {
   const refs = {
+    logo: document.querySelector('[data-logo]'),
     menuBtn: document.querySelector('[data-menu-toggle]'),
     navigation: document.querySelector('[data-menu]'),
     closeMenuItems: document.querySelectorAll('[data-menu-link]'),
@@ -46,17 +47,17 @@
   }
 
   function toggleMenu() {
-    refs.navigation.classList.toggle('isMobOpen');
-
     document.body.classList.toggle('menu-open');
+    refs.logo.classList.toggle('isChangedAccentColor');
+    refs.navigation.classList.toggle('isMobOpen');
     switchingBurger();
     switchingHeaderButton();
   }
 
   function closeMenu() {
-    refs.navigation.classList.remove('isMobOpen');
-    refs.headerContainer.appendChild(refs.headerBtn);
     document.body.classList.remove('menu-open');
+    refs.logo.classList.remove('isChangedAccentColor');
+    refs.navigation.classList.remove('isMobOpen');
     switchingBurger();
     switchingHeaderButton();
   }

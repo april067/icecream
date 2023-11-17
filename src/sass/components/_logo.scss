@@ -13,7 +13,9 @@
 
   fill: var(--main-color);
 
-  @media screen and (max-width: 731px) {
+  transition: fill 250ms var(--timing-fn), color 250ms var(--timing-fn);
+
+  &.isChangedAccentColor {
     fill: var(--accent-color);
     color: var(--accent-color);
   }
