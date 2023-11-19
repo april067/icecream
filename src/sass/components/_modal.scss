@@ -1,0 +1,67 @@
+.backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: absolute;
+  // top: 20px;
+  top: 50%;
+  left: 50%;
+
+  padding: 28px 20px;
+  max-width: 600px;
+
+  border-radius: 10px;
+  overflow: auto;
+
+  background-color: var(--tertiary-color);
+
+  // transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 568px) {
+    // height: 90vh;
+    // max-height: 640px;
+
+    max-height: 90vh;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  border: 1px solid transparent;
+  color: var(--secondary-color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--main-color);
+    color: var(--main-color);
+  }
+}
+
+.modal__close-icon {
+  width: 16px;
+  height: 16px;
+
+  fill: currentColor;
+}
