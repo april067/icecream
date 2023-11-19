@@ -6,7 +6,8 @@ body {
 
   color: var(--main-color);
 
-  &.menu-open {
+  &.menu-open,
+  &.modal-open {
     overflow: hidden;
   }
 }

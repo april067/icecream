@@ -22,7 +22,7 @@
 .modalAbout__video-wrapper iframe {
   display: block;
   border-radius: 10px;
-  // width: 260px;
+
   @include adaptiveValue(width, 260, 400, 320, 480);
   @include adaptiveValue(height, 144, 221, 320, 480);
 
@@ -49,5 +49,8 @@
 }
 
 .modalAbout__link {
+  display: block;
+
+  font-size: 14px;
   color: var(--quaternary-color);
 }
