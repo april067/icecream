@@ -1,26 +1,41 @@
-<div class="modalAbout">
-  <h2 class="modalAbout__title">How it's made?</h2>
-  <div class="modalAbout__video-wrapper">
-    <iframe
-      src="https://www.youtube.com/embed/hO-7cz7gyAY?si=UAZWLatUwi5yZnPI"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-  </div>
-  <p class="modalAbout__desc">
-    Ice cream has been around a long time. Some sources mention ice cream-like
-    foods originating in Persia in about 550BC. Some even believe that the Roman
-    Emperor Nero had snow collected from the mountains and mixed with honey and
-    wine to make sorbet. These days we have hundreds of different types of ice
-    cream, from the usual ice cream van favourites to gourmet gelatos and
-    experimental savoury flavours.
-    <a
-      class="modalAbout__link"
-      href="https://edu.rsc.org/feature/how-ice-cream-is-made/4013705.article"
-      target="_blank"
-      >see more...</a
+<div class="backdrop backdrop__is-hidden" data-about>
+  <div class="modal modalAbout">
+    <button
+      class="modal__close-button"
+      type="button"
+      aria-label="Modal close button"
+      data-about-close
     >
-  </p>
+      <svg class="modal__close-icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="">
+      <h2 class="modalAbout__title">How it's made?</h2>
+      <div class="modalAbout__video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/hO-7cz7gyAY?si=UAZWLatUwi5yZnPI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="modalAbout__desc">
+        Ice cream has been around a long time. Some sources mention ice
+        cream-like foods originating in Persia in about 550BC. Some even believe
+        that the Roman Emperor Nero had snow collected from the mountains and
+        mixed with honey and wine to make sorbet. These days we have hundreds of
+        different types of ice cream, from the usual ice cream van favourites to
+        gourmet gelatos and experimental savoury flavours.
+        <a
+          class="modalAbout__link"
+          href="https://edu.rsc.org/feature/how-ice-cream-is-made/4013705.article"
+          target="_blank"
+          >see more...</a
+        >
+      </p>
+    </div>
+  </div>
 </div>

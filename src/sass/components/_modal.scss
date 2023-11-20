@@ -20,31 +20,6 @@
   }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  padding: 28px 20px;
-  max-width: 600px;
-  border-radius: 10px;
-  overflow: auto;
-
-  background-color: var(--tertiary-color);
-
-  transform: translate(-50%, -50%) scale(1);
-
-  transition: transform 250ms var(--timing-fn);
-
-  .backdrop.backdrop__is-hidden & {
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-
-  @media screen and (min-width: 568px) {
-    max-height: 90vh;
-  }
-}
-
 .modal__close-button {
   position: absolute;
   top: 12px;

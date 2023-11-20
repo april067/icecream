@@ -1,5 +1,6 @@
 .modalAbout {
-  margin: 0 auto;
+  @extend %modal;
+  padding: 28px 20px;
 }
 
 .modalAbout__title {
