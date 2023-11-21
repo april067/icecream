@@ -1,6 +1,11 @@
 .modalAbout {
   @extend %modal;
+  max-width: 600px;
   padding: 28px 20px;
+
+  @media screen and (min-width: 568px) {
+    max-height: 90vh;
+  }
 }
 
 .modalAbout__title {
