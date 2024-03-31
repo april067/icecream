@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/icecream.git"
+    "url": "git+https://github.com/april067/icecream.git"
   },
   "keywords": [],
   "author": "IK Group",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/icecream/issues"
+    "url": "https://github.com/april067/icecream/issues"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
